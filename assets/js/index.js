@@ -1,9 +1,9 @@
 //Соединить два массива в один без повторов (без одинаковых повторяющихся элементов)
 
 function connect(arr) {
-  var a = arr.concat()
-  for (var i = 0; i < a.length; ++i) {
-    for (var j = i + 1; j < a.length; ++j) {
+  let a = arr.concat()
+  for (i = 0; i < a.length; ++i) {
+    for (j = i + 1; j < a.length; ++j) {
       if (a[i] === a[j]) a.splice(j--, 1)
     }
   }
